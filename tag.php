@@ -3,7 +3,7 @@
  * The template used to display Tag Archive pages
  *
  * @package WordPress
- * @subpackage themename
+ * @subpackage webtonio
  */
 
 get_header(); ?>
@@ -15,7 +15,7 @@ get_header(); ?>
 
 				<header class="page-header">
 					<h1 class="page-title"><?php
-						printf( __( 'Tag Archives: %s', 'themename' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+						printf( __( 'Tag Archives: %s', 'webtonio' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 					?></h1>
 				</header>
 

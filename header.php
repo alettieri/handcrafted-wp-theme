@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage themename
+ * @subpackage webtonio
  */
 ?><!DOCTYPE html>
 <!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="ie6"> <![endif]-->
@@ -32,7 +32,7 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'themename' ), max( $paged, $page ) );
+		echo ' | ' . sprintf( __( 'Page %s', 'webtonio' ), max( $paged, $page ) );
 
 	?></title>
 	<meta name="description" content="">
@@ -50,9 +50,10 @@
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	
+	<?php // Better than remy-shiv (includes css query support html5 support and png fixes) ?>
 	<!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
 	
 	<?php wp_head(); ?>
 	</head>
@@ -70,8 +71,8 @@
 				</nav><!-- #utility -->
 	
 				<nav id="access" role="article">
-					<h1 class="section-heading"><?php _e( 'Main menu', 'themename' ); ?></h1>
-					<div class="skip-link visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'themename' ); ?>"><?php _e( 'Skip to content', 'themename' ); ?></a></div>
+					<h1 class="section-heading"><?php _e( 'Main menu', 'webtonio' ); ?></h1>
+					<div class="skip-link visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'webtonio' ); ?>"><?php _e( 'Skip to content', 'webtonio' ); ?></a></div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</nav><!-- #access -->
 		</header><!-- #branding -->

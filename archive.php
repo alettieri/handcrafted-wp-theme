@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage themename
+ * @subpackage webtonio
  */
 
 get_header(); ?>
@@ -14,13 +14,13 @@ get_header(); ?>
 				<header class="page-header">
 					<h1 class="page-title">
 						<?php if ( is_day() ) : ?>
-							<?php printf( __( 'Daily Archives: <span>%s</span>', 'themename' ), get_the_date() ); ?>
+							<?php printf( __( 'Daily Archives: <span>%s</span>', 'webtonio' ), get_the_date() ); ?>
 						<?php elseif ( is_month() ) : ?>
-							<?php printf( __( 'Monthly Archives: <span>%s</span>', 'themename' ), get_the_date( 'F Y' ) ); ?>
+							<?php printf( __( 'Monthly Archives: <span>%s</span>', 'webtonio' ), get_the_date( 'F Y' ) ); ?>
 						<?php elseif ( is_year() ) : ?>
-							<?php printf( __( 'Yearly Archives: <span>%s</span>', 'themename' ), get_the_date( 'Y' ) ); ?>
+							<?php printf( __( 'Yearly Archives: <span>%s</span>', 'webtonio' ), get_the_date( 'Y' ) ); ?>
 						<?php else : ?>
-							<?php _e( 'Blog Archives', 'themename' ); ?>
+							<?php _e( 'Blog Archives', 'webtonio' ); ?>
 						<?php endif; ?>
 					</h1>
 				</header>
