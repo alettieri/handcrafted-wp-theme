@@ -78,7 +78,7 @@ function webtonio_setup_editor(){
 //Get ready to setup the admin interface for users that cannot manage options
 if(!current_user_can('manage_options')){
 	add_action("admin_head","sup");
-	add_action("admin_init","webtonio_configure_menu_page"); //Time to hide Menu items	
+	add_action("admin_menu","webtonio_configure_menu_page"); //Time to hide Menu items	
 }
 
 //Setup the Admin Menus
